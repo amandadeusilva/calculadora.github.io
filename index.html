@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <p id="circuloBranco" onclick="tema()">&#9898;</p> 
+        <p id="circuloPreto" onclick="atualiza()">&#9899;</p>
+        <div class="calculadora">
+            <input id="input1" type="text">
+            <input id="input2" type="text" placeholder="0">
+            <div class="botoes">
+                <button class="operadores" onclick="clean()">C</button>
+                <button class="operadores" id="seta" onclick="back()">&#8592;</button>
+                <button class="operadores" id="divisao" onclick="insert('/')">&#xf7;</button>
+                <button class="operadores" onclick="insert('%')">%</button>
+                <button class="botao" onclick="insert('7')">7</button>
+                <button class="botao" onclick="insert('8')">8</button>
+                <button class="botao" onclick="insert('9')">9</button>
+                <button class="operadores" onclick="insert('*')">X</button>
+                <button class="botao" onclick="insert('4')">4</button>
+                <button class="botao" onclick="insert('5')">5</button>
+                <button class="botao" onclick="insert('6')">6</button>
+                <button class="operadores" onclick="insert('-')">-</button>
+                <button class="botao" onclick="insert('1')">1</button>
+                <button class="botao" onclick="insert('2')">2</button>
+                <button class="botao" onclick="insert('3')">3</button>
+                <button class="operadores" onclick="insert('+')">+</button>
+                <button class="botao" onclick="insert('0')">0</button>
+                <button class="botao" onclick="insert('.')">.</button>
+                <button class="igual" onclick="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javaScript/script.js"></script>
+</body>
+</html>

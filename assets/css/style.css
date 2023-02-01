@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botoes{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    row-gap: 10px;
+    column-gap: 6px;
+    padding-left: 16px;
+    padding-top: 7px;
+}
+p{
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -550px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#seta, #divisao{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circuloBranco{
+    box-shadow: 2px 2px 2px 2px #CCC4C4;
+    border-radius: 10px;
+}
+#circuloPreto{
+    display: none;
+    border-radius: 10px;
+}
+.container{
+    background-color: #D7D7D7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.calculadora{
+    width: 250px;
+    height: 480px;
+    background-color: #3E3E3E;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px #4B4A4A;
+}
+input{
+    width: 245px;
+    height: 90px;
+    border: none;
+    outline: none;
+    background-color: #3E3E3E;
+    color: #CE4249;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 40px;
+    border-radius: 8px;
+}
+#input1{
+    color: #8F8D8D;
+    font-size: 20px;
+}
+button{
+    border: none;
+    background-color: #3E3E3E;
+    border-radius: 25px;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 2px 2px 2px 2px #444343;
+    color: #FFF;
+}
+.botao:hover,
+.operadores:hover{
+    background-color: #3A3939;
+}
+.igual:hover{
+    background-color: #CE4249;
+}
+.igual{
+    width: 105px;
+    margin-top: 2px;
+    background-color: #DD4F56;
+}
+.operadores{
+    color: #F56068;
+}
+@media(max-width:450px){
+    p{
+        margin-left: 280px;
+        margin-top: -570px;
+    }
+}
